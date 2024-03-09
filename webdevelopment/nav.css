@@ -6,9 +6,13 @@ nav{
 }
 nav ul {
     float:right;
+}
+nav ul li {
+    float: right;
     list-style: none;
     position: relative;
 }
+   
 /*Changes color when hovering*/
 nav a:hover {
     background-color: pink;
