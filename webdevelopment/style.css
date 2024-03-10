@@ -1,0 +1,14 @@
+body {
+    background-color:rgb(226, 208, 211)
+}
+body {
+    p::font-size: 20;
+    p::font-variant: american typewriter 
+
+}
+div {
+    width: 300px;
+    border: 15px palevioletred;
+    padding: 50px;
+    margin: 20px;
+  }
