@@ -21,7 +21,7 @@ nav ul li a{
     display:block;
     font-family: american typewriter;
     font-weight: bold;
-    color: #FFCCCC 
+    color: #FFCCCC; 
     font-size:22px;
     padding:0px 10px 10px 15px;
     text-decoration:none;
@@ -30,7 +30,7 @@ nav ul li a{
 nav ul li ul{
     display:none;
     position: absolute;
-    background-color: rgb (204, 255, 204);
+    background-color: rgb(204, 255, 204);
     padding: 10px;
     border-radius: 0px 0px 4px 4px;
 }
