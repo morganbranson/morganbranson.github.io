@@ -1,11 +1,38 @@
 body {
     background-color:rgb(226, 208, 211)
-}
-body {
     p::font-size: 20;
     p::font-variant: american typewriter 
 
 }
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 15% 60% 10%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "AboutHeader"
+    "Headshot"
+    "Content1"
+    "Content2";
+}
+/*AboutHeader styling*/
+.AboutHeader {grid-area: Header;
+        color: palevioletred;
+        text-size-adjust: 70%;
+        text-align: center;
+}
+.HeadShot {grid-area: Image;
+    padding: 5%}
+
+.Content1 {grid-area: Content;
+    margin-left: 2em;
+    font-size: 18 px;}
+
+.Content2 {grid-area: Content;
+    margin-left: 2em;
+    font-size: 18 px;}
+    
 div {
     width: 300px;
     border: 15px palevioletred;
