@@ -4,3 +4,15 @@ body {
     font-family: Helvetica; 
 
 }
+.expercontainer {
+    display: grid;
+    grid-area: 100%;
+    grid-template-areas:
+        "Gildehaus Gildehaus Gildehaus"
+        "Lifeguard Lifeguard pool"
+        "winery AdamPuchta AdamPuchta";
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: 35% 35% 30%;
+    float: left;
+    margin: 5px 5px 5px 5px;
+}
