@@ -1,0 +1,73 @@
+body {
+    background-color:rgb(243, 216, 220);
+    font-size: 20;
+    font-family: Helvetica; 
+
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15% 1fr;
+    gap: 10px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+        "HomeHeader"
+        "HomeContent"
+        "Video"; 
+}
+/*Home Greeting styling*/
+.HomeHeader {grid-area: HomeHeader;
+    color:palevioletred;
+    text-size-adjust: 70%;
+    text-align:center;
+}
+/*Intro Paragraph Styling*/
+.HomeContent {
+    grid-area: HomeContent;
+    font-size: 16;
+}
+/*Resume Video Styling*/
+.Video {
+    grid-area: video;
+    padding: 5%;
+    margin-right: 2em;
+    max-width: 100%;
+    height: auto;
+}
+/* Grid layout in desktop view*/
+@media screen and (min-width: 760px) {
+    .me {width: 10em; height: auto; border-radius: 20%;}
+    .container {
+        display: grid;
+        grid-area: 100%;
+        grid-template-areas: 
+        "HomeHeader"
+        "HomeContent"
+        "Video";
+        grid-template-columns: 35% 30% 35%;
+        grid-template-rows: 30% 35% 35%;
+        float: center; 
+        margin: 5px 5px 5px 5px;
+    }
+    .HomeHeader {
+        grid-area: HomeHeader;
+    }
+    .HomeContent{
+        grid-area: HomeContent;
+    }
+    .Video {
+        grid-area: Video;
+    }
+    .exocontainer {
+        display:grid;
+        grid-area: 100%;
+        grid-template-areas:
+            "HomeHeader HomeHeader HomeHeader"
+            "HomeContent HomeContent HomeContent"
+            "Video Video Video";
+        grid-template-columns: 35% 30% 35%;
+        grid-template-rows: 30% 35% 35%;
+        float: center;
+        margin: 5px 5px 5px 5px;
+    }
+    
