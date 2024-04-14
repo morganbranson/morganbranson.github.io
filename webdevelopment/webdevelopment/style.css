@@ -11,10 +11,9 @@ body {
     gap: 10px;
     grid-auto-flow: row;
     grid-template-areas: 
-    "AboutHeader"
-    "Headshot"
-    "Content1"
-    "Content2";
+    "AboutHeader Headshot"
+    "Content1 Content1"
+    "Content2 Content2";
 }
 /*AboutHeader styling*/
 .AboutHeader {grid-area: AboutHeader;
@@ -70,6 +69,7 @@ div {
     img{
         width:100%
     }
+} 
 @media screen and (max-width: 640px) {
         #left-column{
             width:100%
@@ -77,6 +77,7 @@ div {
         #right-column{
             width:100%
         }
+}
 @media screen and (max-width: 320px) {
             #container{
                 width: 100%;
@@ -85,7 +86,7 @@ div {
                 position: relative;
                 height: 40px;
                 display: block;
-                background-color: cadetblue;
+                background-color:#FFCCCC;
                 width: 100%;
                 }
                 #hamburger {
@@ -115,7 +116,7 @@ div {
                 nav>ul li {
                 text-align: left;
                 font-weight: bold;
-                color: darkmagenta;
+                color: #FFCCCC;
                 float: left;
                 }
                 nav a {
@@ -127,7 +128,8 @@ div {
                 width: 240px;
                 margin-bottom: 2px;
                 }
-                nav .lastMobile {border-bottom: 3px dotted magenta;}
+                nav .lastMobile {border-bottom: 3px dotted palevioletred;}
                 nav ul li ul {
-                display:none;
-                } 
+                display: none;
+                }
+            }
