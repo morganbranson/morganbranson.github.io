@@ -13,7 +13,8 @@ body {
     grid-template-areas: 
         "HomeHeader"
         "HomeContent"
-        "Video"; 
+        "Video"
+        "table"; 
 }
 /*Home Greeting styling*/
 .HomeHeader {grid-area: HomeHeader;
@@ -34,6 +35,8 @@ body {
     max-width: 100%;
     height: auto;
 }
+
+
 /* Grid layout in desktop view*/
 @media screen and (min-width: 760px) {
     .me {width: 10em; height: auto; border-radius: 20%;}
@@ -58,6 +61,7 @@ body {
     .Video {
         grid-area: Video;
     }
+
 } 
 /*icon styles*/
 .footericons {
