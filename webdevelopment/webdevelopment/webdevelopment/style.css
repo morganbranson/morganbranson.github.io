@@ -1,0 +1,135 @@
+body {
+    background-color:rgb(243, 216, 220);
+    font-size: 20px;
+    font-family: Helvetica; 
+
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15% 1fr;
+    gap: 10px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "AboutHeader Headshot"
+    "Content1 Content1"
+    "Content2 Content2";
+}
+/*AboutHeader styling*/
+.AboutHeader {grid-area: AboutHeader;
+        color: palevioletred;
+        text-size-adjust: 70%;
+        text-align: center;
+}
+.HeadShot {grid-area: Image;
+    padding: 5%;
+    margin-right: 2em;
+    max-width: 100%;
+    height: auto;}
+
+.Content1 {grid-area: Content;
+    margin-left: 2em;
+    font-size: 16px;}
+
+.Content2 {grid-area: Content;
+    margin-left: 2em;
+    font-size: 16px;}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+.iconbig{
+    position:absolute;
+    width:0px;
+    -webkit-transition:width 0.3s linear 0s;
+    transition:width 0.3s linear 0s; 
+    z-index:10;
+}
+.icon:hover + .iconbig {
+    width:200px;
+}
+div {
+    width: 300px;
+    border: 15px palevioletred;
+    padding: 50px;
+    margin: 20px;
+  }
+
+@media screen and (max-width: 959px) {
+    #container{
+        width: 100%;
+    }
+    #left-column{
+        width:70%
+    }
+    #right-column{
+        width:30%
+    }
+    img{
+        width:100%
+    }
+} 
+@media screen and (max-width: 640px) {
+        #left-column{
+            width:100%
+        }
+        #right-column{
+            width:100%
+        }
+}
+@media screen and (max-width: 320px) {
+            #container{
+                width: 100%;
+            }
+            header {
+                position: relative;
+                height: 40px;
+                display: block;
+                background-color:#FFCCCC;
+                width: 100%;
+                }
+                #hamburger {
+                display: inline-block;
+                padding-left: 20px;
+                width: 26px;
+                
+                font-size: 2em;
+                }
+                nav ul, nav:active ul {
+                display: none;
+                position: absolute;
+                padding: 20px 20px 20px 0px;
+                top: 20px;
+                }
+                nav:hover ul {
+                display: block;
+                }
+                nav:hover #mobileHide {
+                display: none;
+                }
+                nav li {
+                text-align: center;
+                padding: 0;
+                margin: 0;
+                }
+                nav>ul li {
+                text-align: left;
+                font-weight: bold;
+                color: #FFCCCC;
+                float: left;
+                }
+                nav a {
+                text-decoration: none;
+                display: inline-block;
+                border-top: none;
+                border-bottom: none;
+                padding: 15px 0px 15px 35px;
+                width: 240px;
+                margin-bottom: 2px;
+                }
+                nav .lastMobile {border-bottom: 3px dotted palevioletred;}
+                nav ul li ul {
+                display: none;
+                }
+            }
