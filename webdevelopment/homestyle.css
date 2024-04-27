@@ -35,7 +35,11 @@ body {
     max-width: 100%;
     height: auto;
 }
-
+/*Table Style*/
+table, th, td {
+    border: 1px solid;
+    background-color: palevioletred;
+  }
 
 /* Grid layout in desktop view*/
 @media screen and (min-width: 760px) {

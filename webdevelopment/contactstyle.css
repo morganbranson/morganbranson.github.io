@@ -1,6 +1,6 @@
 body {
     background-color:rgb(243, 216, 220);
-    font-size: 20;
+    font-size: 20px;
     font-family: Helvetica; 
 
 }
@@ -13,8 +13,10 @@ body {
     grid-template-areas: 
     "HeadShot"
 }
-.HeadShot {grid-area: Image;
+.HeadShot {
+    grid-area: Image;
     padding: 5%;
     margin-right: 2em;
     max-width: 100%;
-    height: auto;}
+    height: auto;
+}
