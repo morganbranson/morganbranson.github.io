@@ -3,18 +3,7 @@ body {
     font-size: 20;
     font-family: Arial, Helvetica, sans-serif; 
 }
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 15% 1fr;
-    gap: 10px;
-    grid-auto-flow: row;
-    grid-template-areas: 
-    "AboutHeader"
-    "Headshot"
-    "Content1"
-    "Content2";
-}
+
 /*AboutHeader styling*/
 .AboutHeader {grid-area: AboutHeader;
         color: palevioletred;
