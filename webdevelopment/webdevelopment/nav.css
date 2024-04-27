@@ -1,6 +1,7 @@
 /*this is to make the hamburger not show in the desktop view*/
 #hamburger {
     display: none;
+    color: #FFCCCC;
 }
 /* Color, size and location of all parts of the navigation*/
 nav{
@@ -41,6 +42,7 @@ nav ul li ul{
 /* to show dropsdown when hovering*/
 nav ul li:hover ul{
     display:block;
+    color: palevioletred;
 }
 nav ul li ul li {
     width:100px; 
@@ -66,7 +68,7 @@ nav ul, nav:active ul {
 }
 nav:hover ul {
     display: inline-block;
-    background-color: #FFCCCC;
+    background-color: palevioletred;
     padding: 5px;
     border-right: 0px;
 }
